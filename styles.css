@@ -1,0 +1,55 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #FFFDD0; /* Crema */
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  background: #999; 
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+  color: #800040; /* Guinda */
+}
+
+.extra-content {
+  display: none;
+  margin-top: 10px;
+  margin-left: 20px;
+  color: #7F1E57;
+}
+
+button {
+  background-color: #800040; /* Guinda */
+  color: #FFFDD0; /* Crema */
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 8px;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #7F1E57;
+}
+
+footer {
+  margin-top: 40px;
+  font-style: italic;
+  text-align: center;
+  color: #999;
+}
+
+canvas {
+  margin-top: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}

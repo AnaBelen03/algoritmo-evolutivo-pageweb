@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Algoritmos Evolutivos</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Algoritmos Evolutivos 🧠 </h1>
+
+    <section>
+      <h2>Hill Climbing</h2>
+      <p>
+        Algoritmo simple de optimización que mejora iterativamente la solución actual al explorar sus vecinos.
+      </p>
+      <button onclick="toggle('hill-more', this)">
+        <span class="label">Leer más</span> <span class="arrow">▼</span>
+      </button>
+      <div id="hill-more" class="extra-content">
+        <p>Hill Climbing puede quedarse atrapado en máximos locales. Existen variantes como:</p>
+        <ul>
+          <li><strong>Stochastic Hill Climbing:</strong> elige vecinos aleatorios.</li>
+          <li><strong>First-choice:</strong> acepta el primer mejor vecino encontrado.</li>
+          <li><strong>Simulated Annealing:</strong> permite retrocesos temporales para evitar óptimos locales.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Algoritmos Genéticos</h2>
+      <p>
+        Simulan la evolución mediante selección, cruza y mutación. Se usan para resolver problemas complejos.
+      </p>
+      <button onclick="toggle('genetic-more', this)">
+        <span class="label">Leer más</span> <span class="arrow">▼</span>
+      </button>
+      <div id="genetic-more" class="extra-content">
+        <p>Se usan en:</p>
+        <ul>
+          <li>Optimización de rutas (viajante)</li>
+          <li>Diseño de redes neuronales</li>
+          <li>Problemas combinatorios</li>
+        </ul>
+        <p>Parámetros clave:</p>
+        <ul>
+          <li>Tamaño de población</li>
+          <li>Tasa de cruza y mutación</li>
+          <li>Número de generaciones</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Integración</h2>
+      <p>
+        Hill Climbing puede refinar soluciones dentro de una población genética.
+      </p>
+      <button onclick="toggle('integration-more', this)">
+        <span class="label">Leer más</span> <span class="arrow">▼</span>
+      </button>
+      <div id="integration-more" class="extra-content">
+        <p>
+          Una técnica común es usar un algoritmo genético para explorar globalmente y luego aplicar Hill Climbing a las mejores soluciones para afinarlas. Esto combina exploración global con explotación local.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Simulación Hill Climbing</h2>
+      <canvas id="hillChart" width="600" height="400"></canvas>
+    </section>
+
+    <footer>
+      Página desarrollada por Ana Estrada y Diego Davila 🐶💻 | Ingeniería de Sistemas | Docente Ing Johan
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
